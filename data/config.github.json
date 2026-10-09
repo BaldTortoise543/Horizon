@@ -189,7 +189,5 @@
     "text": "#{message_title}\n\n#{summary}"
   },
   "headers": ""
-},
-    "headers": ""
-  }
+}
 }
