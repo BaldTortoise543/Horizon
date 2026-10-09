@@ -219,19 +219,23 @@
     "default_group_limit": null
   },
   
-"webhook": {
-  "enabled": true,
-  "url_env": "https://baldtortoisenew.app.n8n.cloud/webhook/horizon-ai-news",
-  "delivery": "summary",
-  "overview_position": "first",
-  "platform": "generic",
-  "layout": "markdown",
-  "fallback_layout": "markdown",
-  "languages": null,
-  "request_body": {
-    "text": "#{message_title}\n\n#{summary}"
-  },
-  "headers": ""
+
+  "webhook": {
+    "enabled": true,
+    "url_env": "HORIZON_WEBHOOK_URL",
+    "delivery": "summary",
+    "overview_position": "first",
+    "platform": "generic",
+    "layout": "markdown",
+    "fallback_layout": "markdown",
+    "languages": [
+      "vi"
+    ],
+    "request_body": {
+      "text": "#{message_title}\n\n#{summary}"
+    },
+    "headers": ""
+  }
 },
     "headers": ""
   },
